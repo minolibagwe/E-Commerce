@@ -1,0 +1,48 @@
+.Home_main {
+  height: 100vh;
+  background: linear-gradient(180deg, white, #e1ffea22 60%);
+  display: flex;
+}
+.Home_left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding-left: 180px;
+  line-height: 1.1;
+}
+.Home_left h2 {
+  color: black;
+  font-size: 26px;
+  font-weight: 600;
+}
+.Home_left p {
+  color: black;
+  font-size: 100px;
+  font-weight: 700;
+}
+.home_latest_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 310px;
+  height: 70px;
+  border-radius: 75px;
+  margin-top: 30px;
+  background-color: #ff4141;
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+}
+.home_latest_button img {
+  width: 100px;
+  height: 100px;
+}
+.home_right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

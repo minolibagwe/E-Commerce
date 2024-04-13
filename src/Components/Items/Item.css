@@ -1,0 +1,11 @@
+.item {
+  width: 350px;
+}
+.item-price {
+  display: flex;
+  gap: 20px;
+}
+.item:hover {
+  transform: scale(1.05);
+  transition: 0.6s;
+}

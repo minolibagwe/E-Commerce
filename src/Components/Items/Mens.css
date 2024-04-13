@@ -1,0 +1,55 @@
+.men {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  height: 90vh;
+}
+
+.men h1 {
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.men hr {
+  width: 200px;
+  height: 6px;
+  border-radius: 10px;
+  background: black;
+}
+
+.men-items {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center; /* Center the items horizontally */
+}
+
+.men-item {
+  width: 200px; /* Set the width of each item */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.men-item img {
+  width: 100%; /* Make the image fill its container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.men-item-details {
+  padding: 16px;
+}
+
+.men-item h2 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.men-item p {
+  font-size: 14px;
+  margin-bottom: 8px;
+}

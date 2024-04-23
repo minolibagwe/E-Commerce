@@ -1,4 +1,4 @@
-import { ActionTypes } from "../contants/action-types";
+import { ActionTypes } from "../constants/action-types";
 
 export const setProducts = (products) => {
   return {
@@ -13,9 +13,21 @@ export const selectedProducts = (products) => {
     payload: products,
   };
 };
+export const removeselectedProducts = () => {
+  return {
+    type: ActionTypes.REMOVE_SELECTED_PRODUCT,
+  };
+};
+export const addCart = (product) => {
+  return {
+    type: ActionTypes.ADD_CART,
+    payload: product,
+  };
+};
 
-export const productActions = {
-  setProducts: setProducts,
-  selectedProducts: selectedProducts,
-  // Define other action creators here if needed
+export const delCart = (product) => {
+  return {
+    type: ActionTypes.DELETE_CART,
+    payload: product,
+  };
 };

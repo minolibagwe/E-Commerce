@@ -3,6 +3,7 @@ import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import { setProducts } from "../../redux/actions/productActions";
 import "./Mens.css";
+import { Link } from "react-router-dom";
 const Mens = () => {
   const dispatch = useDispatch();
   const products = useSelector((state) => state.allProducts.products);
@@ -35,9 +36,12 @@ const Mens = () => {
       <div className="men-items">
         {products.map((product) => (
           <div key={product.id} className="men-item">
-            <h2>{product.title}</h2>
-            <p>{product.price}</p>
-            <img src={product.image} alt={product.title} />
+            <Link to={`/product/${product.id}`}>
+              <h2>{product.title}</h2>
+              <img src={product.image} alt={product.title} />
+              <p>$ {product.price}</p>
+              <p>{product.category}</p>
+            </Link>
           </div>
         ))}
       </div>

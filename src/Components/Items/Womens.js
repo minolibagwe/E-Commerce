@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import { setProducts } from "../../redux/actions/productActions";
+import { Link } from "react-router-dom";
 import "./Mens.css";
 const Mens = () => {
   const dispatch = useDispatch();
@@ -35,9 +36,12 @@ const Mens = () => {
       <div className="men-items">
         {products.map((product) => (
           <div key={product.id} className="men-item">
-            <h2>{product.title}</h2>
-            <p>{product.price}</p>
-            <img src={product.image} alt={product.title} />
+            <Link to={`/product/${product.id}`}>
+              <h2>{product.title}</h2>
+              <img src={product.image} alt={product.title} />
+              <p>$ {product.price}</p>
+              <p>{product.category}</p>
+            </Link>
           </div>
         ))}
       </div>

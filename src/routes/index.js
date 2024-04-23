@@ -8,6 +8,7 @@ import routesPath from "./routes";
 import Mens from "../Components/Items/Mens";
 import Womens from "../Components/Items/Womens";
 import Electronics from "../Components/Items/Electronics";
+import ProductDetails from "../Components/Items/ProductDetails";
 
 const childRoutes = [
   {
@@ -33,6 +34,10 @@ const childRoutes = [
   {
     path: routesPath.login.path,
     element: <Login />,
+  },
+  {
+    path: routesPath.productdetails.path,
+    element: <ProductDetails />,
   },
 ];
 

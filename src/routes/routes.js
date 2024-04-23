@@ -30,5 +30,10 @@ const routesPath = {
     name: "login",
     path: "/login",
   },
+  productdetails: {
+    id: "7",
+    name: "productdetails",
+    path: "/product/:productId",
+  },
 };
 export default routesPath;

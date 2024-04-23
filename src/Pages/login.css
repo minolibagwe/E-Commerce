@@ -1,0 +1,74 @@
+.container {
+  display: flex;
+  justify-content: center;
+  height: 80vh;
+  background-color: #f3f3f3; /* Light gray background */
+}
+
+.form {
+  background: #ffffff; /* White background */
+  padding: 40px; /* Increased padding for more space */
+  border-radius: 10px; /* Increased border radius for smoother edges */
+  box-shadow: 0 0 20px rgba(201, 7, 65, 0.911); /* Increased box shadow for depth effect */
+  max-width: 500px; /* Slightly increased max-width */
+  width: 100%;
+}
+
+/* Rest of the CSS remains the same */
+
+.form h2 {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  margin-bottom: 20px;
+}
+
+.form-control label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form-control input:focus {
+  outline: none;
+  border-color: #e00c5d;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #e00c5d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #cf5d8d;
+}
+
+.toggle-form {
+  margin-top: 10px;
+}
+
+.toggle-form span {
+  color: #e00c5d;
+  cursor: pointer;
+}
+
+.toggle-form span:hover {
+  text-decoration: underline;
+}
+.btn-close {
+text-align: center;
+}

@@ -3,8 +3,11 @@ import "./Navbar.css";
 import logo from "../Assets/logo.jpg";
 import shopping_cart from "../Assets/shopping_cart.png";
 import { Link, NavLink } from "react-router-dom";
+import { useSelector } from "react-redux";
 const Navbar = () => {
   const [menu, setMenu] = useState("shop");
+  const state = useSelector((state) => state.cart);
+  console.log(state.cart);
 
   return (
     <div className="navbar_main">
@@ -61,7 +64,7 @@ const Navbar = () => {
         <Link to="/cart">
           <img src={shopping_cart} alt="" />
         </Link>
-        <div className="navbar-cart-count">0</div>
+        <div className="navbar-cart-count">({state ? state.length : 0})</div>
       </div>
     </div>
   );
